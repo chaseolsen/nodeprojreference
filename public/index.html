@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="mainCtrl">
+
+    {{sammich}}
+    <button ng-click=getMeASandwich()>Get Sandwich</button>
+
+    <input ng-model="newSandwich" type="text" value="" placeholder="Make a sandwich">
+    <button ng-click="makeNewSandwich(newSandwich)">Make</button>
+    {{allSammiches}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/controllers/mainCtrl.js"></script>
+    <script src="./js/services/mainSvc.js"></script>
+  </body>
+</html>
